@@ -1,1 +1,221 @@
-const _0x4a59d8=_0xf248;(function(_0x195f67,_0x53626d){const _0x9d1bc0=_0xf248,_0x578c9f=_0x195f67();while(!![]){try{const _0xc09fec=parseInt(_0x9d1bc0(0x237))/0x1*(parseInt(_0x9d1bc0(0x238))/0x2)+-parseInt(_0x9d1bc0(0x22b))/0x3+parseInt(_0x9d1bc0(0x1f9))/0x4*(parseInt(_0x9d1bc0(0x208))/0x5)+parseInt(_0x9d1bc0(0x1f5))/0x6+-parseInt(_0x9d1bc0(0x201))/0x7+-parseInt(_0x9d1bc0(0x1e8))/0x8*(-parseInt(_0x9d1bc0(0x234))/0x9)+-parseInt(_0x9d1bc0(0x1ee))/0xa;if(_0xc09fec===_0x53626d)break;else _0x578c9f['push'](_0x578c9f['shift']());}catch(_0xcf7095){_0x578c9f['push'](_0x578c9f['shift']());}}}(_0x4187,0x2f2fa));const sessionName=_0x4a59d8(0x21f),{default:makeWASocket,useMultiFileAuthState,DisconnectReason,jidDecode,fetchLatestBaileysVersion,downloadContentFromMessage,makeCacheableSignalKeyStore,makeInMemoryStore,delay,getContentType,PHONENUMBER_MCC,getAggregateVotesInPollMessage}=require(_0x4a59d8(0x206)),owner=_0x4a59d8(0x1db),pino=require('pino'),fs=require('fs'),qrcode=require(_0x4a59d8(0x219)),chalk=require(_0x4a59d8(0x22e)),{say}=require(_0x4a59d8(0x203)),NodeCache=require('node-cache'),readline=require(_0x4a59d8(0x229)),express=require(_0x4a59d8(0x1ed)),bodyParser=require(_0x4a59d8(0x22c)),app=express(),usePairingCode=!![],useMobile=![],useStore=![],MAIN_LOGGER=pino({'timestamp':()=>_0x4a59d8(0x224)+new Date()[_0x4a59d8(0x1e5)]()+'\x22'}),logger=MAIN_LOGGER[_0x4a59d8(0x227)]({});function _0xf248(_0x5c041a,_0x2ad7d6){const _0x41874d=_0x4187();return _0xf248=function(_0xf248d5,_0x59ce31){_0xf248d5=_0xf248d5-0x1da;let _0x94c31b=_0x41874d[_0xf248d5];return _0x94c31b;},_0xf248(_0x5c041a,_0x2ad7d6);}logger['level']=_0x4a59d8(0x20c);const store=useStore?makeInMemoryStore({'logger':logger}):undefined;function _0x4187(){const _0x2d3a94=['session','json','Error\x20requesting\x20pairing\x20code','phoneNumber','creds.update',',\x22time\x22:\x22','Caught\x20exception:\x20','listen','child','blue','readline','creds.json','599025gofjSA','body-parser','log','chalk','stdout','green','Unhandled\x20Rejection\x20at:','@s.whatsapp.net','loggedOut','401724ljsnbZ','sendFile','use','103003ssdRwA','6VCnPMa','store','254114018035','Pairing\x20code\x20not\x20required.','</p>','Authenticate\x20and\x20pair\x20your\x20account\x20at\x20http://localhost:','open','Connecting...',',\x20isLatest:\x20','chrome\x20(linux)','rejectionHandled','undefined','toJSON','reason:','Something\x20went\x20wrong','16GhvkIN','application/json','from','./function','port','express','3669930jpeiFb','silent','loadMessage','registered','./session','send','join','1823388rGXgUC','error','serializeM','/requestPairingCode','8764QaYANS','stdin','Cannot\x20use\x20pairing\x20code\x20with\x20mobile\x20api','Wait\x20a\x20moment...','Bot\x20is\x20disconnected','exit','redBright','writeToFile','960652ayqxsN','authState','cfonts','message','sendMessage','@whiskeysockets/baileys','mokaya','445BduTEh','/session/creds.json','body','connecting','trace','creds','I\x20am\x20connected\x20to\x20the\x20WebSocket\x20using\x20Dreaded\x20Bot!','user','You\x20successfully\x20connected\x20to\x20the\x20WebSocket.','requestPairingCode','Dreaded\x20has\x20been\x20linked\x20to\x20your\x20WhatsApp\x20account!\x20Do\x20not\x20share\x20the\x20document\x20above\x20with\x20anyone.\x20\x0a\x0aUpload\x20it\x20to\x20your\x20github\x20fork\x20in\x20the\x20dreaded1\x20folder\x20before\x20deploy!\x20If\x20already\x20uploaded\x20you\x20can\x20ignore\x20this\x20message.','question','close','pino','Sending\x20login\x20credentials\x20now...','Server\x20is\x20running\x20on\x20port\x20','unhandledRejection','qrcode-terminal','keyword','catch','createInterface','/pairing.html','get'];_0x4187=function(){return _0x2d3a94;};return _0x4187();}store?.['readFromFile'](_0x4a59d8(0x1f2)),setInterval(()=>{const _0x4d6752=_0x4a59d8;store?.[_0x4d6752(0x200)](_0x4d6752(0x1f2));},0x2710*0x6);const msgRetryCounterCache=new NodeCache(),rl=readline[_0x4a59d8(0x21c)]({'input':process[_0x4a59d8(0x1fa)],'output':process[_0x4a59d8(0x22f)]}),question=_0x5648ca=>new Promise(_0x3f3f2e=>rl[_0x4a59d8(0x213)](_0x5648ca,_0x3f3f2e)),P=require(_0x4a59d8(0x215))({'level':_0x4a59d8(0x1ef)}),stores=makeInMemoryStore({'logger':pino()[_0x4a59d8(0x227)]({'level':'silent','stream':_0x4a59d8(0x1da)})}),{smsg,await,sleep,getBuffer}=require(_0x4a59d8(0x1eb)),color=(_0x53491c,_0x53bd29)=>{const _0x22a3b5=_0x4a59d8;return!_0x53bd29?chalk[_0x22a3b5(0x230)](_0x53491c):chalk[_0x22a3b5(0x21a)](_0x53bd29)(_0x53491c);};async function startDreaded(){const _0x9bdf83=_0x4a59d8,{state:_0xe61db0,saveCreds:_0x45f85b}=await useMultiFileAuthState(sessionName);let {version:_0x3477f4,isLatest:_0x5ac4c3}=await fetchLatestBaileysVersion();console[_0x9bdf83(0x22d)](chalk['redBright']('using\x20WA\x20v'+_0x3477f4[_0x9bdf83(0x1f4)]('.')+_0x9bdf83(0x1e1)+_0x5ac4c3));const _0x223523=makeWASocket({'version':_0x3477f4,'logger':P,'printQRInTerminal':!usePairingCode,'mobile':useMobile,'browser':[_0x9bdf83(0x1e2),'',''],'auth':{'creds':_0xe61db0[_0x9bdf83(0x20d)],'keys':makeCacheableSignalKeyStore(_0xe61db0['keys'],P)},'msgRetryCounterCache':msgRetryCounterCache,'getMessage':async _0x3453a9=>{const _0x5d36bd=_0x9bdf83;if(store){const _0x182ce5=await store[_0x5d36bd(0x1f0)](_0x3453a9['remoteJid'],_0x3453a9['id']);return _0x182ce5[_0x5d36bd(0x204)]||undefined;}}});store?.['bind'](_0x223523['ev']);const _0x2db384=app[_0x9bdf83(0x226)](0x0,()=>{const _0x586490=_0x9bdf83,_0x1ec2eb=_0x2db384['address']()[_0x586490(0x1ec)];app[_0x586490(0x236)](bodyParser['urlencoded']({'extended':!![]})),app[_0x586490(0x21e)]('/',(_0xb3ccac,_0x56bfb9)=>{const _0xea6464=_0x586490;_0x56bfb9[_0xea6464(0x235)](__dirname+_0xea6464(0x21d));}),app['post'](_0x586490(0x1f8),async(_0x140af0,_0x17d038)=>{const _0xa70e0=_0x586490,_0x44aaa3=_0x140af0[_0xa70e0(0x20a)][_0xa70e0(0x222)];try{if(usePairingCode&&!_0x223523[_0xa70e0(0x202)]['creds'][_0xa70e0(0x1f1)]){if(useMobile)throw new Error(_0xa70e0(0x1fb));const _0x163b89=await _0x223523[_0xa70e0(0x211)](_0x44aaa3);console[_0xa70e0(0x22d)]('Pairing\x20code:\x20'+_0x163b89),_0x17d038[_0xa70e0(0x1f3)]('<h1>Pairing\x20Code</h1><p\x20style=\x22font-size:\x2024px;\x22>'+_0x163b89+_0xa70e0(0x1dd));}else _0x17d038['json']({'message':_0xa70e0(0x1dc)});}catch(_0x42ae03){console[_0xa70e0(0x1f6)](_0x42ae03),_0x17d038['status'](0x1f4)[_0xa70e0(0x220)]({'error':_0xa70e0(0x221)});}}),console[_0x586490(0x22d)](_0x586490(0x217)+_0x1ec2eb),console[_0x586490(0x22d)](_0x586490(0x1de)+_0x1ec2eb);}),_0x5801e8=new Map();process['on'](_0x9bdf83(0x218),(_0x199232,_0x184a45)=>{const _0x1913df=_0x9bdf83;_0x5801e8['set'](_0x184a45,_0x199232),console[_0x1913df(0x22d)](_0x1913df(0x231),_0x184a45,_0x1913df(0x1e6),_0x199232);}),process['on'](_0x9bdf83(0x1e3),_0xf6ef2e=>{_0x5801e8['delete'](_0xf6ef2e);}),process['on'](_0x9bdf83(0x1e7),function(_0xf3bc34){const _0x28bfb2=_0x9bdf83;console['log'](_0x28bfb2(0x225),_0xf3bc34);}),_0x223523['autosw']=!![],_0x223523[_0x9bdf83(0x207)]=owner+_0x9bdf83(0x232),_0x223523[_0x9bdf83(0x1f7)]=_0x3814bf=>smsg(_0x223523,_0x3814bf,store),_0x223523['ev']['on']('connection.update',async _0x112f46=>{const _0x32af8c=_0x9bdf83,{connection:_0x1ee32c,lastDisconnect:_0x37b5a9,qr:_0xc5239a}=_0x112f46;_0x37b5a9==_0x32af8c(0x1e4)&&askForOTP();if(_0x1ee32c===_0x32af8c(0x20b))console[_0x32af8c(0x22d)](chalk[_0x32af8c(0x228)](_0x32af8c(0x1e0))),console[_0x32af8c(0x22d)]('[DREADED]\x20Bot\x20is\x20trying\x20to\x20link...');else{if(_0x1ee32c===_0x32af8c(0x1df)){await delay(0x1f4),console['log'](chalk[_0x32af8c(0x230)](_0x32af8c(0x210))),await _0x223523[_0x32af8c(0x205)](_0x223523[_0x32af8c(0x207)],{'text':_0x32af8c(0x20e)}),await _0x223523['sendMessage'](_0x223523[_0x32af8c(0x20f)]['id'],{'text':_0x32af8c(0x216)}),await _0x223523['sendMessage'](_0x223523[_0x32af8c(0x20f)]['id'],{'text':_0x32af8c(0x1fc)});let _0x48b632=await fs['readFileSync'](__dirname+_0x32af8c(0x209));c=Buffer[_0x32af8c(0x1ea)](_0x48b632)['toString']('base64');let _0x30288e=await _0x223523[_0x32af8c(0x205)](_0x223523[_0x32af8c(0x20f)]['id'],{'document':_0x48b632,'fileName':_0x32af8c(0x22a),'mimetype':_0x32af8c(0x1e9)});await _0x223523['sendMessage'](_0x223523['user']['id'],{'text':_0x32af8c(0x212)},{'quoted':_0x30288e});}else _0x1ee32c===_0x32af8c(0x214)&&(_0x37b5a9['error']['output']['statusCode']==DisconnectReason[_0x32af8c(0x233)]?(console[_0x32af8c(0x22d)](chalk[_0x32af8c(0x1ff)]('Disconnected!\x20Check\x20if\x20account\x20is\x20active\x20and\x20retry')),_0x223523[_0x32af8c(0x205)](_0x223523[_0x32af8c(0x207)],{'text':_0x32af8c(0x1fd)}),process[_0x32af8c(0x1fe)](0x0)):startDreaded()[_0x32af8c(0x21b)](()=>startDreaded()));}}),_0x223523['ev']['on'](_0x9bdf83(0x223),_0x45f85b);}startDreaded();
+const sessionName = "session";
+const {
+  default: makeWASocket,
+  useMultiFileAuthState,
+  DisconnectReason,
+  jidDecode,
+  fetchLatestBaileysVersion,
+  downloadContentFromMessage,
+  makeCacheableSignalKeyStore,
+  makeInMemoryStore,
+  delay,
+  getContentType,
+  PHONENUMBER_MCC,
+  getAggregateVotesInPollMessage,
+} = require("@whiskeysockets/baileys");
+const owner = '254114018035';
+const pino = require("pino");
+const fs = require("fs");
+const qrcode = require("qrcode-terminal");
+const chalk = require("chalk");
+const { say } = require("cfonts");
+const NodeCache = require("node-cache");
+const readline = require("readline");
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+
+//const port = 5000; // Choose your desired port
+
+
+// Create an Express.js route to serve the 'pairing.html' page
+
+
+const usePairingCode = true; 
+const useMobile = false; 
+const useStore = false; 
+  
+const MAIN_LOGGER = pino({ timestamp: () => `,"time":"${new Date().toJSON()}"` }); 
+  
+const logger = MAIN_LOGGER.child({}); 
+logger.level = "trace"; 
+  
+const store = useStore ? makeInMemoryStore({ logger }) : undefined; 
+store?.readFromFile("./session"); 
+  
+setInterval(() => { 
+   store?.writeToFile("./session"); 
+ }, 10000 * 6); 
+  
+const msgRetryCounterCache = new NodeCache(); 
+  
+const rl = readline.createInterface({ 
+   input: process.stdin, 
+   output: process.stdout, 
+ }); 
+const question = (text) => new Promise((resolve) => rl.question(text, resolve)); 
+  
+const P = require("pino")({ 
+   level: "silent", 
+}); 
+const stores = makeInMemoryStore({ 
+   logger: pino().child({ level: "silent", stream: "store" }), 
+}); 
+const { 
+   smsg, 
+   await, 
+   sleep, 
+   getBuffer, 
+} = require("./function"); 
+  
+const color = (text, color) => { 
+   return !color ? chalk.green(text) : chalk.keyword(color)(text); 
+};
+async function startDreaded() {
+  const { state, saveCreds } = await useMultiFileAuthState(sessionName);
+  let { version, isLatest } = await fetchLatestBaileysVersion();
+  console.log(chalk.redBright(`using WA v${version.join(".")}, isLatest: ${isLatest}`));
+  const dreaded = makeWASocket({
+    version,
+    logger: P,
+    printQRInTerminal: !usePairingCode,
+    mobile: useMobile,
+    browser: ["chrome (linux)", "", ""],
+    auth: {
+      creds: state.creds,
+      keys: makeCacheableSignalKeyStore(state.keys, P),
+    },
+    msgRetryCounterCache,
+    getMessage: async (key) => {
+      if (store) {
+        const msg = await store.loadMessage(key.remoteJid, key.id);
+        return msg.message || undefined;
+      }
+    },
+  });
+
+  store?.bind(dreaded.ev);
+  const server = app.listen(0, () => {
+const aport = server.address().port
+  app.use(bodyParser.urlencoded({ extended: true }));
+
+app.get('/', (req, res) => {
+   res.sendFile(__dirname + './public/pairing.html');
+});
+
+app.post('/requestPairingCode', async (req, res) => {
+    const phoneNumber = req.body.phoneNumber;
+
+    try {
+        if (usePairingCode && !dreaded.authState.creds.registered) {
+            if (useMobile) {
+                throw new Error("Cannot use pairing code with mobile api");
+            }
+
+            // Request the pairing code
+            const code = await dreaded.requestPairingCode(phoneNumber);
+            console.log(`Pairing code: ${code}`);
+
+            // Send the pairing code as plain text response
+            res.send(`<h1>Pairing Code</h1><p style="font-size: 24px;">${code}</p>`);
+        } else {
+            res.json({ message: 'Pairing code not required.' });
+        }
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Error requesting pairing code' });
+    }
+});
+
+
+
+
+   console.log(`Server is running on port ${aport}`);
+   console.log(`Authenticate and pair your account at http://localhost:${aport}`);
+   
+});
+
+  const unhandledRejections = new Map(); 
+   process.on("unhandledRejection", (reason, promise) => { 
+     unhandledRejections.set(promise, reason); 
+     console.log("Unhandled Rejection at:", promise, "reason:", reason); 
+   }); 
+   process.on("rejectionHandled", (promise) => { 
+     unhandledRejections.delete(promise); 
+   }); 
+   process.on("Something went wrong", function(err) { 
+     console.log("Caught exception: ", err); 
+   }); 
+   dreaded.autosw = true; 
+   dreaded.mokaya= `${owner}@s.whatsapp.net`; 
+   dreaded.serializeM = (m) => smsg(dreaded, m, store); 
+   dreaded.ev.on('connection.update', async (update) => { 
+  
+     const { 
+       connection, 
+       lastDisconnect, 
+       qr 
+     } = update 
+     if(lastDisconnect == 'undefined') { 
+       askForOTP() 
+       /*qrcode.generate(qr, { 
+         small: true 
+       })*/ 
+     } 
+     if(connection === 'connecting') { 
+       console.log(chalk.blue("Connecting...")) 
+       console.log("[DREADED] Bot is trying to link...") 
+     } else if(connection === 'open') { 
+     	await delay(500);
+       console.log(chalk.green(`You successfully connected to the WebSocket.`)) 
+await dreaded.sendMessage(dreaded.mokaya, { 
+         text: `I am connected to the WebSocket using Dreaded Bot!`, 
+       }); 
+       await dreaded.sendMessage(dreaded.user.id, { 
+         text: `Sending login credentials now...`, 
+       }); 
+       
+       
+       
+       
+       await dreaded.sendMessage(dreaded.user.id, { 
+         text: `Wait a moment...`, 
+       }); 
+       
+       let result = await fs.readFileSync(__dirname + '/session/creds.json');
+       
+       c = Buffer.from(result).toString('base64');
+       
+                                              let sess = await dreaded.sendMessage(dreaded.user.id, { document: result, fileName: `creds.json`, mimetype: 'application/json'}); 
+                                              
+        await dreaded.sendMessage(dreaded.user.id, { text: `Dreaded has been linked to your WhatsApp account! Do not share the document above with anyone. \n\nUpload it to your github fork in the dreaded1 folder before deploy! If already uploaded you can ignore this message.`}, {quoted: sess});
+        
+        
+       
+       
+       
+       
+        
+     } else if(connection === 'close') { 
+       if(lastDisconnect.error.output.statusCode == DisconnectReason.loggedOut) { 
+         console.log(chalk.redBright("Disconnected! Check if account is active and retry")) 
+         dreaded.sendMessage(dreaded.mokaya, { 
+           text: `Bot is disconnected`, 
+         }); 
+         process.exit(0) 
+       } else { 
+         startDreaded().catch(() => startDreaded()) 
+       } 
+     } 
+   }) 
+  dreaded.ev.on("creds.update", saveCreds);
+  
+  
+
+
+  // ... Rest of your code here
+}
+
+// Start the function
+startDreaded();
