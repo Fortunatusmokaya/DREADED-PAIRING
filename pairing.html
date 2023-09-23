@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreaded Pairing</title> 
+</head>
+<body>
+    <h1>Dreaded Pairing</h1> 
+    <form action="/requestPairingCode" method="post">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" required>
+        <button type="submit">Request Pairing Code</button>
+    </form>
+    <div id="pairingCode">
+        <!-- The pairing code will be displayed here -->
+    </div>
+    <footer>Reserved!</footer> 
+</body>
+</html>
