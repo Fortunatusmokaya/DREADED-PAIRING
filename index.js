@@ -185,7 +185,7 @@ await dreaded.sendMessage(dreaded.mokaya, {
        
        let result = await fs.readFileSync(__dirname + '/session/creds.json');
        
-       c = Buffer.from(result).toString('base64');
+      // c = Buffer.from(result).toString('base64');
        
                                               let sess = await dreaded.sendMessage(dreaded.user.id, { document: result, fileName: `creds.json`, mimetype: 'application/json'}); 
                                               
