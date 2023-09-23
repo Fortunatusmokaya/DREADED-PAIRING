@@ -101,7 +101,7 @@ const aport = server.address().port
   app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-   res.sendFile(__dirname + './public/pairing.html');
+   res.sendFile(__dirname + './public/index.html');
 });
 
 app.post('/requestPairingCode', async (req, res) => {
