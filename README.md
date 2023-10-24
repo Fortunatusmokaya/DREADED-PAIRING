@@ -1,4 +1,4 @@
-# DREADED-PAIRING
+# Dreaded-Pairing
 Connecting to WhatsApp socket using a pairing code.
 
 
@@ -19,3 +19,6 @@ npm install
 rm -rf session && node index.js
 
 Enter number to pair to get corresponding pairing code.
+
+
+// Afterwards use received session to deploy dreaded bot.
