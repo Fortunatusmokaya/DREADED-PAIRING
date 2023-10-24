@@ -21,4 +21,4 @@ rm -rf session && node index.js
 Enter number to pair to get corresponding pairing code.
 
 
-// Afterwards use received session to deploy dreaded bot.
+=> Afterwards use the received creds.json to deploy dreaded bot by forking the main repo and uploading the creds to dreaded1 folder.
